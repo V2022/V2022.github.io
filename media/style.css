@@ -46,13 +46,7 @@ p {
   }
   .countup .timeel {
     display: inline-block;
-    padding: 10px;
     margin: 0;
     min-width: 2.6rem;
-    margin-left: 13px;
-    border-radius: 10px 0 0 10px;
   }
-  .countup span[class*="timeRef"] {
-    border-radius: 0 10px 10px 0;
-    margin-left: 0;
-  }
+ 
