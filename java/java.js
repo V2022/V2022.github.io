@@ -25,9 +25,19 @@ window.onload = function() {
     countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
   }
 
-function autoplay(){
-    var r =confirm("Would You Like To AutoPlay Music?");
-    if (r == true) {
-        document.getElementById("audio").play();
-    }
+
+  document.getElementById("button").addEventListener("click", function(){
+	var audio = document.getElementById("music");
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "Play"
+    audio.pause();
   }
+  else
+  {
+    this.className = "is-playing";
+    this.innerHTML = "Pause";
+    audio.play();
+  }
+
+});
